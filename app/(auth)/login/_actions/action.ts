@@ -2,9 +2,9 @@
 
 import { z } from "zod";
 import prisma from "@/lib/server/prisma";
-import bcrypt from "bcrypt";
+
 import argon2 from "argon2";
-import { redirect } from "next/navigation";
+
 import { cookies } from "next/headers";
 
 const schema = z.object({
