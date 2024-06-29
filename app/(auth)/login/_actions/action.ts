@@ -58,6 +58,9 @@ export default async function loginUser(prevState: any, formData: FormData) {
       }
     } else {
       console.log("No match");
+      return {
+        message: "Invalid Login Credentials",
+      };
     }
   } catch (error) {
     if (error) {
