@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className=" w-full min-h-screen ">
       <MainUi />
-      <div className=" py-36 flex items-center justify-center space-x-10">
+      <div className=" py-36 flex lg:flex-row flex-col items-center lg:justify-center space-x-10">
         <Link href={"/categories/chairs"}>
           <div className=" flex justify-center items-center w-[14rem] h-[14rem] rounded-[50%] bg-[#F2EDE7]">
             <Image src={chair} width={150} height={150} alt="" />

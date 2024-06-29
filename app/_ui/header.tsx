@@ -14,9 +14,13 @@ export default function Page({
 
   return (
     <header className=" w-full py-5">
+      <Link className=" lg:hidden" href={"/"}>
+        <p className=" text-3xl font-semibold text-center">Dublin-Funiture</p>
+      </Link>
+      <br />
       <div className=" w-[80%] flex items-center justify-between mx-auto">
-        <Link href={"/"}>
-          <p className=" text-3xl font-semibold">Dublin-Funiture</p>
+        <Link className=" hidden lg:block" href={"/"}>
+          <p className="  text-3xl font-semibold">Dublin-Funiture</p>
         </Link>
         <nav>
           <ul className=" flex items-center space-x-5">

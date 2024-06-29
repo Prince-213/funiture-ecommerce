@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <div className=" w-[80%] min-h-screen mx-auto  ">
       <h1 className=" my-14 text-4xl font-bold">Our Categories</h1>
-      <div className=" flex items-center space-x-10">
+      <div className=" flex lg:flex-row flex-col items-center space-y-10 lg:space-x-10">
         <Link href={"/categories/chairs"}>
           <div className=" flex justify-center items-center w-[14rem] h-[14rem]  bg-[#F2EDE7]">
             <Image src={chair} width={150} height={150} alt="" />

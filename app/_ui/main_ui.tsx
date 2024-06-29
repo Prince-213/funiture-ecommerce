@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import pic from "@/lib/assets/toa-heftiba-FV3GConVSss-unsplash.jpg";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const MainUi = () => {
   return (
@@ -27,7 +28,7 @@ const MainUi = () => {
             initial={{ opacity: 0, y: 70 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, ease: "easeIn", delay: 0.2 }}
-            className=" text-8xl font-semibold"
+            className=" text-4xl lg:text-8xl font-semibold"
           >
             Collection
           </motion.h1>
@@ -38,11 +39,15 @@ const MainUi = () => {
 
         <div className=" space-y-4 flex flex-col">
           <button className=" px-8 w-[14rem] rounded-full font-medium py-3 bg-[#F9F7F4]">
-            Explore Collection
+            <Link href={"/categories"}>
+              <p>Explore Collection</p>
+            </Link>
           </button>
 
-          <button className=" px-8 rounded-full w-[14rem]  font-medium py-3 border-[#F9F7F4] text-[#F9F7F4] border-2">
-            Shop Now
+          <button className=" px-8 w-[14rem] rounded-full font-medium py-3 bg-[#F9F7F4]">
+            <Link href={"/show"}>
+              <p>Shop Now</p>
+            </Link>
           </button>
         </div>
       </div>

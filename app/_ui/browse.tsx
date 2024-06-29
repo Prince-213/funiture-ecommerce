@@ -31,7 +31,7 @@ const Browse = () => {
             }
           </p>
           <div className=" flex flex-col">
-            <Link className=" p-4 font-semibold underline" href="/">
+            <Link className=" p-4 font-semibold underline" href="/about">
               <p>About Us</p>
             </Link>
           </div>
